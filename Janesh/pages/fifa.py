@@ -1,5 +1,5 @@
 import streamlit as st
-from matplotlib import image
+from PTL import Image
 import pandas as pd
 import plotly.express as px
 import os
@@ -13,7 +13,7 @@ IMAGE_PATH = dir_of_interest/"images"/"FIFA.jpg"
 DATA_PATH = dir_of_interest/"data" / "Fifa.csv"
 st.title(":red[Football] Stats Explorer")
 
-img = image.imread(IMAGE_PATH)
+img = Image.open(IMAGE_PATH)
 st.image(img)
 
 df = pd.read_csv(DATA_PATH)
