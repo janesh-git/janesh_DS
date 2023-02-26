@@ -7,7 +7,7 @@ import pathlib
 
 FILE_PATH = pathlib.Path(__file__)
 FILE_DIR = FILE_PATH.cwd()
-dir_of_interest = FILE_DIR/"resources"
+dir_of_interest = FILE_DIR/"Janesh/"resources"
 
 IMAGE_PATH = dir_of_interest/"images"/"FIFA.jpg"
 DATA_PATH = dir_of_interest/"data" / "Fifa.csv"
